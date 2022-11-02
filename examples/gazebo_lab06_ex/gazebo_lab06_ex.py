@@ -74,6 +74,9 @@ if __name__ == '__main__':
 
             if highest_reward < cumulated_reward:
                 highest_reward = cumulated_reward
+                # save highest reward
+                qlearn.saveQ("Q_values")
+                print('New highest reward')
 
             nextState = ''.join(map(str, observation))
 

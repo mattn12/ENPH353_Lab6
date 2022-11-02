@@ -26,7 +26,7 @@ class QLearn:
         Save the Q state-action values in a pickle file.
         '''
         # TODO: Implement saving Q values to pickle and CSV files.
-        print(f'Saving: {format.self.q}')
+        print(f'Saving: {format(self.q)}')
         with open(filename,'wb') as f:
             pickle.dump(self.q,f)
 
